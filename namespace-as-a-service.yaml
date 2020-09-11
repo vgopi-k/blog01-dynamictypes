@@ -1,0 +1,639 @@
+layout:
+  pages:
+    - id: page_general
+      sections:
+        - id: section_c00bfa75
+          fields:
+            - id: deploymentName
+              display: textField
+              state:
+                visible: true
+                read-only: true
+        - id: section_description
+          fields:
+            - id: description
+              display: textArea
+              state:
+                visible: true
+                read-only: false
+        - id: section_project
+          fields:
+            - id: project
+              display: dropDown
+              state:
+                visible: true
+                read-only: false
+        - id: section_2bcadbdb
+          fields:
+            - id: requestedBy
+              display: textField
+              state:
+                visible: false
+                read-only: true
+      title: General
+      state: {}
+    - id: page_e6fe5474
+      sections:
+        - id: section_315d7e65
+          fields:
+            - id: appId
+              display: textField
+              state:
+                visible: true
+                read-only: false
+        - id: section_6f338637
+          fields:
+            - id: appName
+              display: textField
+              state:
+                visible: true
+                read-only: false
+        - id: section_74df3e06
+          fields:
+            - id: userPassword
+              display: textField
+              state:
+                visible: false
+                read-only: true
+        - id: section_74fc3f01
+          fields:
+            - id: text_d8e7ab15
+              display: text
+              state:
+                visible: true
+                read-only: false
+        - id: section_69ca7904
+          fields:
+            - id: checkbox_a621643c
+              display: checkbox
+              state:
+                visible: true
+                read-only: false
+        - id: section_af257850
+          fields:
+            - id: textField_510dcb07
+              display: textField
+              state:
+                read-only: false
+                visible:
+                  - equals:
+                      checkbox_a621643c: true
+                    value: true
+      title: Home
+      state: {}
+    - id: page_40bb5d82
+      sections:
+        - id: section_7f888dd3
+          fields:
+            - id: devNamespace
+              display: textField
+              state:
+                visible: true
+                read-only: true
+        - id: section_c73e5266
+          fields:
+            - id: text_075d3340
+              display: text
+              state:
+                visible: true
+                read-only: false
+        - id: section_21e75516
+          fields:
+            - id: checkbox_4329bd7b
+              display: checkbox
+              state:
+                visible: true
+                read-only: false
+        - id: section_acb17450
+          fields:
+            - id: devCpu
+              display: decimalField
+              state:
+                read-only: false
+                visible:
+                  - equals:
+                      checkbox_4329bd7b: true
+                    value: true
+        - id: section_c35cd3c1
+          fields:
+            - id: devMem
+              display: decimalField
+              state:
+                read-only: false
+                visible:
+                  - equals:
+                      checkbox_4329bd7b: true
+                    value: true
+      title: DEV
+      state: {}
+    - id: page_c6a0e606
+      sections:
+        - id: section_eadeef84
+          fields:
+            - id: uatNamespace
+              display: textField
+              state:
+                visible: true
+                read-only: true
+        - id: section_9ea1a70e
+          fields:
+            - id: text_36d7b25c
+              display: text
+              state:
+                visible: true
+                read-only: false
+        - id: section_315c9173
+          fields:
+            - id: checkbox_ce73392e
+              display: checkbox
+              state:
+                visible: true
+                read-only: false
+        - id: section_38a95deb
+          fields:
+            - id: uatCpu
+              display: decimalField
+              state:
+                read-only: false
+                visible:
+                  - equals:
+                      checkbox_ce73392e: true
+                    value: true
+        - id: section_3fd37d11
+          fields:
+            - id: uatMem
+              display: decimalField
+              state:
+                read-only: false
+                visible:
+                  - equals:
+                      checkbox_ce73392e: true
+                    value: true
+      title: UAT
+      state: {}
+    - id: page_9e6b258a
+      sections:
+        - id: section_a3ea5d25
+          fields:
+            - id: sitNamespace
+              display: textField
+              state:
+                visible: true
+                read-only: true
+        - id: section_5dc2e431
+          fields:
+            - id: text_dc62b016
+              display: text
+              state:
+                visible: true
+                read-only: false
+        - id: section_5d772412
+          fields:
+            - id: checkbox_23be54df
+              display: checkbox
+              state:
+                visible: true
+                read-only: false
+        - id: section_3bc5ef42
+          fields:
+            - id: sitCpu
+              display: decimalField
+              state:
+                read-only: false
+                visible:
+                  - equals:
+                      checkbox_23be54df: true
+                    value: true
+        - id: section_1838e663
+          fields:
+            - id: sitMem
+              display: decimalField
+              state:
+                read-only: false
+                visible:
+                  - equals:
+                      checkbox_23be54df: true
+                    value: true
+      title: SIT
+      state: {}
+    - id: page_74f791bc
+      sections:
+        - id: section_a869722b
+          fields:
+            - id: nftNamespace
+              display: textField
+              state:
+                visible: true
+                read-only: true
+        - id: section_822a194d
+          fields:
+            - id: text_8bc27b42
+              display: text
+              state:
+                visible: true
+                read-only: false
+        - id: section_2c234768
+          fields:
+            - id: checkbox_6181ac5d
+              display: checkbox
+              state:
+                visible: true
+                read-only: false
+        - id: section_a370ba4c
+          fields:
+            - id: nftCpu
+              display: decimalField
+              state:
+                read-only: false
+                visible:
+                  - equals:
+                      checkbox_6181ac5d: true
+                    value: true
+        - id: section_0cbababe
+          fields:
+            - id: nftMem
+              display: decimalField
+              state:
+                read-only: false
+                visible:
+                  - equals:
+                      checkbox_6181ac5d: true
+                    value: true
+      title: NFT
+      state: {}
+    - id: page_a3bc1a1a
+      sections:
+        - id: section_69cc5d9e
+          fields:
+            - id: specificNamespace
+              display: textField
+              state:
+                visible: true
+                read-only: true
+        - id: section_dfe5a370
+          fields:
+            - id: text_18375dbb
+              display: text
+              state:
+                visible: true
+                read-only: false
+        - id: section_c695b928
+          fields:
+            - id: checkbox_6da3d70d
+              display: checkbox
+              state:
+                visible: true
+                read-only: false
+        - id: section_769ee53d
+          fields:
+            - id: specificCpu
+              display: decimalField
+              state:
+                read-only: false
+                visible:
+                  - equals:
+                      checkbox_6da3d70d: true
+                    value: true
+        - id: section_455d6570
+          fields:
+            - id: specificMem
+              display: decimalField
+              state:
+                read-only: false
+                visible:
+                  - equals:
+                      checkbox_6da3d70d: true
+                    value: true
+      title: Specific
+      state:
+        visible:
+          - equals:
+              checkbox_a621643c: true
+            value: true
+schema:
+  deploymentName:
+    label: Deployment Name
+    description: Deployment Name
+    signpost: 'It is same as {app-name}. This field will be auto-populated.'
+    type:
+      dataType: string
+      isMultiple: false
+    default:
+      bind:
+        values:
+          - '`OCP-Deployment-`'
+          - appName
+        operator: concatenate
+    placeholder: 'OCP-Deployment-{app-name}'
+    constraints:
+      required: true
+      max-value: 80
+  description:
+    label: Description
+    description: Description
+    type:
+      dataType: string
+      isMultiple: false
+    constraints:
+      max-value: 256
+  project:
+    label: Project
+    description: Project
+    type:
+      dataType: string
+      isMultiple: false
+    valueList:
+      id: projects
+      type: scriptAction
+    constraints:
+      required: true
+  requestedBy:
+    label: requestedBy
+    type:
+      dataType: string
+      isMultiple: false
+    default:
+      bind: _requestedBy
+  appId:
+    label: App ID
+    type:
+      dataType: string
+      isMultiple: false
+  appName:
+    label: App Name
+    type:
+      dataType: string
+      isMultiple: false
+    constraints:
+      required: true
+  userPassword:
+    label: User Password
+    type:
+      dataType: string
+      isMultiple: false
+    default:
+      type: scriptAction
+      id: com.vmware.pso.custom.caas/generateRandomPassword
+      parameters: []
+  text_d8e7ab15:
+    type:
+      dataType: string
+    default: >-
+      By default, this service catalog creates 4 namespaces (<app name>-dev,
+      <app name>-sit, <app name>-uat and <app name>-nft). If you want additional
+      specific namespace, check the below option.
+    constraints: {}
+  checkbox_a621643c:
+    label: Specific Namespace
+    type:
+      dataType: boolean
+    default: false
+    constraints: {}
+  textField_510dcb07:
+    label: Specific Namespace Name
+    signpost: >-
+      Don't include {app-name} to prefix. {app-name} will be appended to prefix
+      of Specific Namespace in backend.
+
+      Eg:If {app-name} is kbtg, specific namespace name will be kbtg-poc
+    type:
+      dataType: string
+    placeholder: Enter only name.
+    constraints:
+      pattern:
+        value: '^[a-z0-9]{3,8}$'
+        message: >-
+          Only lower case alphabets and numbers are allowed. A minimum of 3
+          characters and maximum of 8 characters are allowed.
+      required:
+        - equals:
+            checkbox_a621643c: true
+          value: true
+  devNamespace:
+    label: Namespace Name
+    type:
+      dataType: string
+      isMultiple: false
+    default:
+      bind:
+        values:
+          - appName
+          - '`-dev`'
+        operator: concatenate
+  text_075d3340:
+    type:
+      dataType: string
+    default: >-
+      By default, DEV namespace will be assigned with 2 CPU and 2 GB of MEM. If
+      you want custom size, check the below option.
+    constraints: {}
+  checkbox_4329bd7b:
+    label: Custom Size
+    type:
+      dataType: boolean
+    default: false
+    constraints: {}
+  devCpu:
+    label: CPU (Cores)
+    type:
+      dataType: decimal
+      isMultiple: false
+    step: 1
+    default: 1
+    constraints:
+      min-value: 1
+      max-value: 8
+  devMem:
+    label: Memory (GB)
+    type:
+      dataType: decimal
+      isMultiple: false
+    step: 2
+    default: 2
+    constraints:
+      min-value: 2
+      max-value: 32
+  uatNamespace:
+    label: Namespace Name
+    type:
+      dataType: string
+      isMultiple: false
+    default:
+      bind:
+        values:
+          - appName
+          - '`-uat`'
+        operator: concatenate
+  text_36d7b25c:
+    type:
+      dataType: string
+    default: >-
+      By default, UAT namespace will be assigned with 2 CPU and 2 GB of MEM. If
+      you want custom size, check the below option.
+    constraints: {}
+  checkbox_ce73392e:
+    label: Custom Size
+    type:
+      dataType: boolean
+    default: false
+    constraints: {}
+  uatCpu:
+    label: CPU (Cores)
+    type:
+      dataType: decimal
+      isMultiple: false
+    step: 1
+    default: 1
+    constraints:
+      min-value: 1
+      max-value: 8
+  uatMem:
+    label: Memory (GB)
+    type:
+      dataType: decimal
+      isMultiple: false
+    step: 2
+    default: 2
+    constraints:
+      min-value: 2
+      max-value: 32
+  sitNamespace:
+    label: Namespace Name
+    type:
+      dataType: string
+      isMultiple: false
+    default:
+      bind:
+        values:
+          - appName
+          - '`-sit`'
+        operator: concatenate
+  text_dc62b016:
+    type:
+      dataType: string
+    default: >-
+      By default, SIT namespace will be assigned with 2 CPU and 2 GB of MEM. If
+      you want custom size, check the below option.
+    constraints: {}
+  checkbox_23be54df:
+    label: Custom Size
+    type:
+      dataType: boolean
+    default: false
+    constraints: {}
+  sitCpu:
+    label: CPU (Cores)
+    type:
+      dataType: decimal
+      isMultiple: false
+    step: 1
+    default: 1
+    constraints:
+      min-value: 1
+      max-value: 8
+  sitMem:
+    label: Memory (GB)
+    type:
+      dataType: decimal
+      isMultiple: false
+    step: 2
+    default: 2
+    constraints:
+      min-value: 2
+      max-value: 32
+  nftNamespace:
+    label: Namespace Name
+    type:
+      dataType: string
+      isMultiple: false
+    default:
+      bind:
+        values:
+          - appName
+          - '`-nft`'
+        operator: concatenate
+  text_8bc27b42:
+    type:
+      dataType: string
+    default: >-
+      By default, NFT namespace will be assigned with 2 CPU and 2 GB of MEM. If
+      you want custom size, check the below option.
+    constraints: {}
+  checkbox_6181ac5d:
+    label: Custom Size
+    type:
+      dataType: boolean
+    constraints: {}
+  nftCpu:
+    label: CPU (Cores)
+    type:
+      dataType: decimal
+      isMultiple: false
+    step: 1
+    default: 1
+    constraints:
+      min-value: 1
+      max-value: 8
+  nftMem:
+    label: Memory (GB)
+    type:
+      dataType: decimal
+      isMultiple: false
+    step: 2
+    default: 2
+    constraints:
+      min-value: 2
+      max-value: 32
+  specificNamespace:
+    label: Namespace Name
+    type:
+      dataType: string
+      isMultiple: false
+    default:
+      type: scriptAction
+      id: com.vmware.pso.custom.caas/validateSpecificNamespace
+      parameters:
+        - specificNamespaceName: textField_510dcb07
+          $type:
+            dataType: string
+            isMultiple: false
+        - appName: appName
+          $type:
+            dataType: string
+            isMultiple: false
+    constraints:
+      match: 'null'
+  text_18375dbb:
+    type:
+      dataType: string
+    default: >-
+      By default, Specific namespace will be assigned with 2 CPU and 2 GB of
+      MEM. If you want custom size, check the below option.
+    constraints: {}
+  checkbox_6da3d70d:
+    label: Custom Size
+    type:
+      dataType: boolean
+    constraints: {}
+  specificCpu:
+    label: CPU (Cores)
+    type:
+      dataType: decimal
+      isMultiple: false
+    step: 1
+    default: 1
+    constraints:
+      min-value: 1
+      max-value: 8
+  specificMem:
+    label: Memory (GB)
+    type:
+      dataType: decimal
+      isMultiple: false
+    step: 2
+    default: 2
+    constraints:
+      min-value: 2
+      max-value: 32
+options:
+  externalValidations: []
